@@ -64,26 +64,31 @@
                         <p style="color: var(--text-gray); font-size: 0.95rem;">Respetamos plenamente su relación con el cliente. Una vez concluida la evaluación cardiológica (ecocardiograma, holter, etc.), remitiremos al paciente de vuelta a su clínica junto con un informe detallado (enviado en max. 24h) para que usted continúe con el manejo integral del caso.</p>
                     </div>
 
-                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Este es un entorno de demostración. En producción, esto enviaría el correo a info@andamedivet.com');">
+                    <form name="formulario-remisiones" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="gracias.html">
+                        <!-- Campo oculto antispam -->
+                        <p style="display:none;">
+                            <label>No llenes este campo si eres humano: <input name="bot-field" /></label>
+                        </p>
+                        
                         <h3 style="margin-bottom: 20px; color: var(--primary-color);">Datos del Colega Remitente</h3>
                         <div class="two-cols">
                             <div class="form-group">
                                 <label class="form-label">Nombre del Médico Veterinario</label>
-                                <input type="text" class="form-control" placeholder="Dr/Dra." required>
+                                <input type="text" name="nombre_veterinario" class="form-control" placeholder="Dr/Dra." required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Nombre de la Clínica Veterinaria</label>
-                                <input type="text" class="form-control" placeholder="Nombre de su centro" required>
+                                <input type="text" name="clinica" class="form-control" placeholder="Nombre de su centro" required>
                             </div>
                         </div>
                         <div class="two-cols">
                             <div class="form-group">
                                 <label class="form-label">Correo Electrónico (para envío de informe)</label>
-                                <input type="email" class="form-control" placeholder="email@clinica.com" required>
+                                <input type="email" name="email_clinica" class="form-control" placeholder="email@clinica.com" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Teléfono / WhatsApp</label>
-                                <input type="tel" class="form-control" placeholder="+57" required>
+                                <input type="tel" name="telefono_clinica" class="form-control" placeholder="+57" required>
                             </div>
                         </div>
 
@@ -91,22 +96,22 @@
                         <div class="two-cols">
                             <div class="form-group">
                                 <label class="form-label">Nombre de la Mascota</label>
-                                <input type="text" class="form-control" placeholder="Ej. Toby" required>
+                                <input type="text" name="nombre_mascota" class="form-control" placeholder="Ej. Toby" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Especie, Raza y Edad</label>
-                                <input type="text" class="form-control" placeholder="Canino, Schnauzer, 8 años" required>
+                                <input type="text" name="especie_raza_edad" class="form-control" placeholder="Canino, Schnauzer, 8 años" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Motivo de Remisión y Resumen Clínico</label>
-                            <textarea class="form-control" rows="5" placeholder="Soplos detectados, hallazgos radiológicos, motivo por el que requiere el ecocardiograma..." required></textarea>
+                            <textarea name="resumen_clinico" class="form-control" rows="5" placeholder="Soplos detectados, hallazgos radiológicos, motivo por el que requiere el ecocardiograma..." required></textarea>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Servicio Solicitado</label>
-                            <select class="form-control" required>
+                            <select name="servicio_solicitado" class="form-control" required>
                                 <option value="">Seleccione una opción...</option>
                                 <option value="ecocardiograma">Ecocardiografía Doppler</option>
                                 <option value="electrocardiograma">Electrocardiograma (ECG)</option>
