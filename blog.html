@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:;">
+    <meta name="X-Content-Type-Options" content="nosniff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Blog de cardiología veterinaria. Artículos especializados sobre salud cardiovascular de perros y gatos por el Dr. Daniel Sandoval.">
+    <title>Blog | Andamedivet Cardiólogo Veterinario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header UX -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html#inicio" class="logo" aria-label="Ir al inicio de Andamedivet">
+                <img src="assets/images/logo.png" alt="Andamedivet Logo" style="height: 50px;">
+                <div class="logo-text">
+                    <span class="brand">Andamedivet</span>
+                    <span class="sub-brand">Dr. Daniel Sandoval</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav class="nav-container" id="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+
+                <a href="https://wa.me/573222378532" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Agendar Cita
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Blog Archive Header -->
+        <section class="article-header" style="padding-bottom: 60px;">
+            <div class="container">
+                <h1 class="article-title">Blog de Salud Cardiovascular</h1>
+                <p class="article-meta" style="font-size: 1.1rem;">Recursos y artículos escritos por nuestro especialista.</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Articulo 1 -->
+                    <article class="blog-card" tabindex="0" onclick="window.location='articulo.html'">
+                        <div class="blog-image">
+                            <img src="assets/images/blog_dog.png" alt="Soplo en el corazón de perros">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Cardiología Canina</span>
+                            <h3>Soplo en el corazón de tu perro: ¿Cuándo acudir al cardiólogo en Bogotá?</h3>
+                            <p>Descubre los signos de alerta tempranos y por qué un ecocardiograma Doppler es vital para razas pequeñas.</p>
+                            <a href="articulo.html" class="btn-read-more">Leer Artículo <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Articulo 2 -->
+                    <article class="blog-card" tabindex="0" onclick="window.location='articulo.html'">
+                        <div class="blog-image">
+                            <img src="assets/images/blog_cat.png" alt="Mi gato respira muy rápido">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Salud Felina</span>
+                            <h3>Mi gato tose mucho o respira rápido: ¿Problema respiratorio o del corazón?</h3>
+                            <p>Las miocardiopatías en gatos a menudo son silenciosas. Aprende a identificar los síntomas.</p>
+                            <a href="articulo.html" class="btn-read-more">Leer Artículo <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border:none;">
+                <p>&copy; <span id="current-year">2024</span> Andamedivet - Cardiología Veterinaria.</p>
+                <a href="index.html" style="color:var(--text-light);"><i class="fa-solid fa-arrow-left"></i> Volver al Inicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

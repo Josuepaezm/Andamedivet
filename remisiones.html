@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:;">
+    <meta name="description" content="Portal exclusivo para médicos veterinarios. Derivación de pacientes de cardiología veterinaria con el Dr. Daniel Sandoval en Bogotá.">
+    <title>Remisión de Pacientes | Andamedivet Cardiólogo Veterinario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .remission-header { padding: 120px 0 60px; background-color: var(--primary-color); color: var(--text-light); text-align: center; }
+        .remission-title { font-size: 2.5rem; margin-bottom: 20px; }
+        .form-container { max-width: 800px; margin: -40px auto 100px; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+        .form-group { margin-bottom: 25px; }
+        .form-label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--text-dark); }
+        .form-control { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-body); font-size: 1rem; transition: border-color 0.3s; }
+        .form-control:focus { outline: none; border-color: var(--accent-color); }
+        .two-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .two-cols { grid-template-columns: 1fr; } }
+        .commitment-banner { background: rgba(230,30,40,0.05); border-left: 5px solid var(--accent-color); padding: 25px; border-radius: 8px; margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header UX -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html#inicio" class="logo">
+                <img src="assets/images/logo.png" alt="Andamedivet Logo" style="height: 50px;">
+                <div class="logo-text">
+                    <span class="brand">Andamedivet</span>
+                    <span class="sub-brand">Dr. Daniel Sandoval</span>
+                </div>
+            </a>
+            
+            <nav class="nav-container" id="nav-container" style="display:flex;">
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <a href="https://wa.me/573222378532" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-phone"></i> Línea Exclusiva Colegas
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="remission-header">
+            <div class="container">
+                <h1 class="remission-title">Portal de Remisión Veterinaria</h1>
+                <p style="font-size: 1.1rem; color: #cbd5e1; max-width: 700px; margin: 0 auto;">Trabajamos como una extensión de su equipo médico. Envíenos el caso clínico de su paciente para una valoración especializada en cardiología.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="form-container">
+                    
+                    <div class="commitment-banner">
+                        <h4 style="color: var(--text-dark); margin-bottom: 10px;"><i class="fa-solid fa-handshake" style="color: var(--accent-color);"></i> Nuestro Compromiso Ético</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem;">Respetamos plenamente su relación con el cliente. Una vez concluida la evaluación cardiológica (ecocardiograma, holter, etc.), remitiremos al paciente de vuelta a su clínica junto con un informe detallado (enviado en max. 24h) para que usted continúe con el manejo integral del caso.</p>
+                    </div>
+
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Este es un entorno de demostración. En producción, esto enviaría el correo a info@andamedivet.com');">
+                        <h3 style="margin-bottom: 20px; color: var(--primary-color);">Datos del Colega Remitente</h3>
+                        <div class="two-cols">
+                            <div class="form-group">
+                                <label class="form-label">Nombre del Médico Veterinario</label>
+                                <input type="text" class="form-control" placeholder="Dr/Dra." required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Nombre de la Clínica Veterinaria</label>
+                                <input type="text" class="form-control" placeholder="Nombre de su centro" required>
+                            </div>
+                        </div>
+                        <div class="two-cols">
+                            <div class="form-group">
+                                <label class="form-label">Correo Electrónico (para envío de informe)</label>
+                                <input type="email" class="form-control" placeholder="email@clinica.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Teléfono / WhatsApp</label>
+                                <input type="tel" class="form-control" placeholder="+57" required>
+                            </div>
+                        </div>
+
+                        <h3 style="margin-top: 20px; margin-bottom: 20px; color: var(--primary-color);">Datos del Paciente</h3>
+                        <div class="two-cols">
+                            <div class="form-group">
+                                <label class="form-label">Nombre de la Mascota</label>
+                                <input type="text" class="form-control" placeholder="Ej. Toby" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Especie, Raza y Edad</label>
+                                <input type="text" class="form-control" placeholder="Canino, Schnauzer, 8 años" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Motivo de Remisión y Resumen Clínico</label>
+                            <textarea class="form-control" rows="5" placeholder="Soplos detectados, hallazgos radiológicos, motivo por el que requiere el ecocardiograma..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Servicio Solicitado</label>
+                            <select class="form-control" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="ecocardiograma">Ecocardiografía Doppler</option>
+                                <option value="electrocardiograma">Electrocardiograma (ECG)</option>
+                                <option value="holter">Monitoreo Holter 24H</option>
+                                <option value="prequirurgico">Evaluación Prequirúrgica Cardíaca</option>
+                                <option value="consulta">Consulta Especializada Integral</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 15px;">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Remisión
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: 40px;">
+        <div class="container">
+            <div class="footer-bottom" style="border:none;">
+                <p>&copy; <span id="current-year">2024</span> Andamedivet - Cardiología Veterinaria.</p>
+                <a href="index.html" style="color:var(--text-light);"><i class="fa-solid fa-arrow-left"></i> Volver a la Clínica</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
