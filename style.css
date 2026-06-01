@@ -608,6 +608,51 @@ a:focus, button:focus, article:focus, input:focus {
     align-items: center;
 }
 
+/* PanaBot.co Tech Credit Strip */
+.panabot-credit {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 20px;
+    padding-top: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.5px;
+}
+.panabot-credit a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+.panabot-credit a:hover {
+    color: rgba(255,255,255,0.85);
+}
+.panabot-credit .panabot-logo {
+    height: 14px;
+    width: auto;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    vertical-align: middle;
+}
+.panabot-credit a:hover .panabot-logo {
+    opacity: 0.9;
+}
+.panabot-credit i {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    transition: color 0.3s ease;
+}
+.panabot-credit a:hover i {
+    color: rgba(255,255,255,0.8);
+}
+
 /* Floating WhatsApp con UX mejorada */
 .floating-whatsapp {
     position: fixed;
@@ -859,6 +904,15 @@ a:focus, button:focus, article:focus, input:focus {
     }
     .about-grid {
         grid-template-columns: 1fr;
+    }
+    #dra-angelica .container > div {
+        grid-template-columns: 1fr !important;
+    }
+    #dra-angelica .container > div > div[style*="order: 2"] {
+        order: 1 !important;
+    }
+    #dra-angelica .container > div > div[style*="order: 1"] {
+        order: 2 !important;
     }
     .footer-grid {
         grid-template-columns: 1fr;
