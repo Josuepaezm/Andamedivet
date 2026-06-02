@@ -571,6 +571,40 @@
                 text-align: center;
             }
         }
+        @media (max-width: 576px) {
+            .profile-images {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                max-width: 320px;
+                margin: 0 auto 30px;
+            }
+            .profile-img-main {
+                max-width: 280px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .profile-img-secondary {
+                display: none; /* Oculta la imagen secundaria en celulares para optimizar espacio y carga */
+            }
+            .profile-name {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .profile-title {
+                font-size: 0.95rem;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .profile-divider {
+                margin: 0 auto 20px;
+            }
+            .profile-bio p {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+        }
     </style>
 </head>
 <body>
