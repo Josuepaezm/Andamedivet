@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -498,6 +498,9 @@
             .professional-profile,
             .professional-profile.reverse {
                 grid-template-columns: 1fr;
+                gap: 40px;
+                margin-bottom: 70px;
+                padding-bottom: 70px;
             }
             .professional-profile.reverse .profile-images {
                 order: 0;
@@ -508,19 +511,65 @@
             .profile-images {
                 position: static;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 20px;
+                align-items: center;
             }
-            .profile-img-main {
-                aspect-ratio: 1/1;
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
         @media (max-width: 768px) {
-            .page-hero h1 { font-size: 2rem; }
+            .page-hero {
+                padding: 100px 0 50px;
+            }
+            .page-hero h1 { font-size: 2.2rem; }
+            .page-hero p { font-size: 1rem; }
+            .professionals-section {
+                padding: 40px 0 60px;
+            }
+            .professional-profile {
+                margin-bottom: 50px;
+                padding-bottom: 50px;
+            }
             .profile-name { font-size: 2rem; }
-            .profile-images { grid-template-columns: 1fr; }
+            .profile-title { font-size: 1rem; margin-bottom: 20px; }
+            .profile-divider { margin-bottom: 20px; }
+            .profile-images {
+                grid-template-columns: 1.1fr 0.9fr; /* Keep side-by-side for elegant collage */
+                gap: 12px;
+            }
+            .profile-quote {
+                padding: 20px 24px;
+                margin: 25px 0;
+            }
+            .profile-quote::before {
+                font-size: 3.5rem;
+                top: 5px;
+                left: 10px;
+            }
+            .profile-quote p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
             .highlights-grid { grid-template-columns: 1fr; }
-            .values-grid { grid-template-columns: 1fr; }
-            .profile-cta { flex-direction: column; }
+            .values-grid { grid-template-columns: 1fr; gap: 15px; }
+            
+            /* Stretched buttons for thumb friendliness */
+            .profile-cta { 
+                flex-direction: column; 
+                align-items: stretch;
+                width: 100%;
+                gap: 12px;
+            }
+            .profile-cta .btn-wa-daniel,
+            .profile-cta .btn-wa-angelica,
+            .profile-cta .btn {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
         }
     </style>
 </head>
