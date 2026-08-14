@@ -1,0 +1,31 @@
+# Andamedivet - Cardiología e Imagenología Veterinaria
+
+Sitio web oficial de Andamedivet, servicio veterinario especializado liderado por el Dr. Daniel Sandoval y la Dra. Angélica Jiménez. Ofrecemos diagnóstico cardiovascular avanzado, ecografía e imagenología veterinaria a domicilio en Bogotá, Cundinamarca, Boyacá y Villavicencio.
+
+## Información de Contacto
+- **Sitio Web Principal**: https://andamedivet.com
+- **Teléfono / WhatsApp**: +57 322 237 8532
+- **Ubicación Principal**: Bogotá, Colombia (Servicio a domicilio)
+- **Correo Electrónico**: info@andamedivet.com
+
+## Profesionales
+- **Dr. Daniel Sandoval**: Médico Veterinario egresado de la U.D.C.A., especialista en Cardiología e Imagenología Veterinaria. Experiencia clínica internacional en Colombia, Honduras y República Dominicana.
+- **Dra. Angélica Jiménez**: Médica Veterinaria egresada de la U.D.C.A., especialista en Ecografía Diagnóstica, Imagenología y Medicina de Conservación. Experiencia internacional en Costa Rica, Honduras y República Dominicana.
+
+## Servicios Principales
+1. **Cardiología Veterinaria**: Ecocardiograma Doppler a domicilio, electrocardiograma (ECG), monitoreo Holter de 24 horas, medición de presión arterial y evaluación prequirúrgica.
+2. **Imagenología y Ecografía**: Ecografía abdominal veterinaria, ecografía gestacional y diagnóstico por imágenes para perros y gatos.
+3. **Medicina Veterinaria Integral**: Consulta clínica general a domicilio, vacunación, desparasitación y toma de muestras de laboratorio en casa.
+
+## Mapa del Sitio (Páginas Principales)
+- **Inicio**: https://andamedivet.com/
+- **Profesionales**: https://andamedivet.com/profesionales.html (Perfiles detallados del equipo médico)
+- **Blog**: https://andamedivet.com/blog.html (Artículos y consejos de salud cardiovascular para mascotas)
+- **Portal de Remisiones**: https://andamedivet.com/remisiones.html (Formulario para veterinarios que remiten pacientes)
+
+## Zonas de Cobertura (Páginas Locales de SEO)
+Servicio a domicilio disponible en:
+- **Localidades de Bogotá**: Usaquén, Chapinero, Suba, Kennedy, Engativá, Teusaquillo, Fontibón, Barrios Unidos, Santa Fe, Puente Aranda, Los Mártires, La Candelaria, Antonio Nariño, San Cristóbal, Rafael Uribe Uribe, Ciudad Bolívar, Bosa, Tunjuelito, Usme.
+- **Municipios de Cundinamarca**: Chía, Cajicá, Zipaquirá, Cota, Sopó, Tocancipá, La Calera, Funza, Mosquera, Madrid, Facatativá, Soacha.
+- **Boyacá**: Tunja, Duitama, Sogamoso, Villa de Leyva.
+- **Meta**: Villavicencio.
